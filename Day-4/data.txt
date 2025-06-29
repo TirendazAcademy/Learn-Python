@@ -1,0 +1,4 @@
+isim,yas,sehir
+Ali,25,İstanbul
+Ayşe,,Ankara
+Can,30,
