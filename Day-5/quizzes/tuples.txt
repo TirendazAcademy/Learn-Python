@@ -1,0 +1,128 @@
+🟡 1. Aşağıdakilerden hangisi tek elemanlı bir tuple tanımıdır?
+
+A) x = (42)
+B) x = 42,
+C) x = [42]
+D) x = {42}
+
+✅ Doğru cevap: B
+🟡 2. Tuple veri tipi aşağıdakilerden hangisidir?
+
+A) Değiştirilebilir
+B) Sırasız
+C) Değiştirilemez
+D) Anahtarlı
+
+✅ Doğru cevap: C
+🟡 3. Aşağıdaki ifadelerden hangisi tuple() fonksiyonunun çıktısıdır?
+
+tuple("abc")
+
+A) ("abc")
+B) ["a", "b", "c"]
+C) ('a', 'b', 'c')
+D) abc
+
+✅ Doğru cevap: C
+🟡 4. reversed() fonksiyonu bir tuple üzerinde ne döner?
+
+A) Yeni tuple
+B) Liste
+C) Iterator
+D) Sayı
+
+✅ Doğru cevap: C
+🟡 5. Aşağıdaki tuple'lardan hangisi hashlenemez?
+
+A) (1, 2, 3)
+B) ("a", "b")
+C) ([1, 2], "x")
+D) ((), 3.5)
+
+✅ Doğru cevap: C
+🟡 6. Tuple'larda + operatörü ne işe yarar?
+
+A) Eleman siler
+B) Tuple’ları birleştirir
+C) Tuple’ı çevirir
+D) Eleman arar
+
+✅ Doğru cevap: B
+🟡 7. Tuple’larda * operatörü ne işe yarar?
+
+A) Eleman siler
+B) Elemanları tekrarlar
+C) Ters çevirir
+D) Eleman ekler
+
+✅ Doğru cevap: B
+🟡 8. Aşağıdaki kod ne döner?
+
+x = (1, 2, 3)
+print(x[::-1])
+
+A) (1, 2, 3)
+B) [3, 2, 1]
+C) (3, 2, 1)
+D) None
+
+✅ Doğru cevap: C
+🟡 9. Aşağıdakilerden hangisi bir tuple oluşturmaz?
+
+A) x = 1, 2
+B) x = (1,)
+C) x = [1, 2]
+D) x = tuple("abc")
+
+✅ Doğru cevap: C
+🟡 10. tuple[2][1] ne zaman kullanılır?
+
+A) Sözlük üzerinde
+B) Liste içinde tuple varsa
+C) Tuple içinde iç içe liste veya tuple varsa
+D) String için
+
+✅ Doğru cevap: C
+🟡 11. Tuple’ın uzunluğunu ölçmek için hangi fonksiyon kullanılır?
+
+A) length()
+B) size()
+C) len()
+D) count()
+
+✅ Doğru cevap: C
+🟡 12. Aşağıdaki kodda hata var mı?
+
+x = (1, 2, 3)
+x[1] = 10
+
+A) Hayır, çalışır
+B) Evet, tuple değiştirilemez
+C) Hata olmaz, ama sonuç değişmez
+D) Sadece liste için geçerli
+
+✅ Doğru cevap: B
+🟡 13. Aşağıdakilerden hangisi tuple unpacking örneğidir?
+
+A) a = (1, 2)
+B) a, b = (1, 2)
+C) a = 1; b = 2
+D) tuple(a, b) = x
+
+✅ Doğru cevap: B
+🟡 14. tuple(int(x) for x in ("1", "2", "3")) çıktısı nedir?
+
+A) (1, 2, 3)
+B) ["1", "2", "3"]
+C) [1, 2, 3]
+D) '123'
+
+✅ Doğru cevap: A
+🟡 15. sorted((3, 1, 2)) çıktısı nedir?
+
+A) (1, 2, 3)
+B) [1, 2, 3]
+C) None
+D) Hata verir
+
+✅ Doğru cevap: B

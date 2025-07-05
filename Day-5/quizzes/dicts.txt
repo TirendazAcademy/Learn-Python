@@ -1,0 +1,147 @@
+1. Aşağıdakilerden hangisi sözlük (dictionary) veri tipidir?
+A) [1, 2, 3]
+B) ("a", "b")
+C) {"elma": 5, "armut": 3} ✅
+D) {1, 2, 3}
+
+2. Bir sözlükte anahtarlar (keys) nasıl tanımlanır?
+A) Anahtarlar sayı olmak zorunda
+B) Anahtarlar string olmak zorunda
+C) Anahtarlar sadece index ile belirlenir
+D) Anahtarlar hashable (değiştirilemez) olmalı ✅
+
+3. Aşağıdaki kodun çıktısı nedir?
+
+d = {"a": 1, "b": 2}
+print(d["c"])
+
+A) None
+B) 0
+C) Hata verir ✅
+D) c
+
+4. .get() metodunun görevi nedir?
+A) Anahtarı siler
+B) Değer ekler
+C) Anahtara ait değeri getirir, yoksa hata vermez ✅
+D) Anahtarları sıralar
+
+5. .setdefault("kivi", 0) ne işe yarar?
+A) "kivi" anahtarı varsa 0 yapar
+B) "kivi" anahtarı yoksa 0 değeriyle ekler ✅
+C) Sözlüğü sıfırlar
+D) Hata verir
+
+6. Aşağıdaki kodun çıktısı ne olur?
+
+d = {"a": 1}
+d.update({"b": 2})
+print(d)
+
+A) {"b": 2}
+B) {"a": 1, "b": 2} ✅
+C) {"a": 2}
+D) Hata verir
+
+7. dict() fonksiyonu ne yapar?
+A) Liste oluşturur
+B) Sözlük oluşturur ✅
+C) Tuple oluşturur
+D) Fonksiyon oluşturur
+
+8. pop("anahtar") ne yapar?
+A) Anahtarı günceller
+B) Anahtarı siler ve değerini döner ✅
+C) Anahtarın değerini None yapar
+D) Anahtarı sıraya koyar
+
+9. .popitem() ne zaman hata verir?
+A) Anahtar yoksa
+B) Sözlük boşsa ✅
+C) Anahtar varsa
+D) Hiçbir zaman
+
+10. clear() metodunun çıktısı ne olur?
+
+d = {"a": 1, "b": 2}
+d.clear()
+print(d)
+
+A) None
+B) {} ✅
+C) {"a": 0, "b": 0}
+D) Hata verir
+
+11. Aşağıdakilerden hangisi sözlükte sıralama yapmaz?
+A) sorted(d.items())
+B) sorted(d)
+C) d.sort() ✅
+D) sorted(d.values())
+
+12. Anahtarlar sözlük içinde tekrar edebilir mi?
+A) Evet
+B) Hayır ✅
+C) Aynı değer varsa tekrar edebilir
+D) String ise evet
+
+13. Aşağıdaki sözlüklerden hangisi geçersizdir?
+A) {"a": 1, "b": 2}
+B) {1: "bir", 2.5: "iki", True: "üç"}
+C) {[1, 2]: "liste"} ✅
+D) {(1, 2): "tuple"}
+
+14. len(d) fonksiyonu ne döner?
+A) Değerlerin toplamını
+B) Anahtar sayısını ✅
+C) İlk anahtarı
+D) Sözlüğü sıralar
+
+15. list(d.keys()) çıktısı nedir?
+A) Anahtarların listesi ✅
+B) Değerlerin listesi
+C) Tuple’ların listesi
+D) Hata verir
+
+16. Aşağıdaki kod ne yazdırır?
+
+d = {"x": 10}
+print(d.get("y", 0))
+
+A) 10
+B) None
+C) 0 ✅
+D) y
+
+17. Aşağıdaki sözlük hangi sırayla sıralanır?
+
+d = {"Ali": 90, "Zeynep": 80, "Can": 85}
+sorted(d)
+
+A) Notlara göre
+B) Anahtarlara göre ✅
+C) Uzunluğa göre
+D) Karışık
+
+18. Sözlük içinde başka bir sözlük tutulabilir mi?
+A) Hayır
+B) Sadece liste olabilir
+C) Evet ✅
+D) Sadece sayılar olabilir
+
+19. Aşağıdaki kod ne yapar?
+
+sum({"a": 3, "b": 5}.values())
+
+A) Hata verir
+B) 8 ✅
+C) a3b5
+D) None
+
+20. Aşağıdaki ifade ne işe yarar?
+
+{isim: len(isim) for isim in ["Ali", "Ayşe"]}
+
+A) Liste oluşturur
+B) Uzunlukları sıralar
+C) Her ismi anahtar, uzunluğunu değer yapar ✅
+D) Hata verir

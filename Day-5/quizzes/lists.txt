@@ -1,0 +1,120 @@
+1. Aşağıdakilerden hangisi bir liste tanımıdır?
+
+A) list = 123
+B) list = "123"
+C) list = [1, 2, 3] ✅
+D) list = (1, 2, 3)
+2. list = [1, 2, 3]; list.append(4) komutundan sonra liste ne olur?
+
+A) [1, 2, 3]
+B) [1, 2, 3, 4] ✅
+C) [4, 1, 2, 3]
+D) Hata verir
+3. list = [1, 2, 3]; list.extend([4, 5]) sonrası ne olur?
+
+A) [1, 2, 3, [4, 5]]
+B) [1, 2, 3, 4, 5] ✅
+C) [4, 5, 1, 2, 3]
+D) Hata verir
+4. list.insert(1, 100) ne işe yarar?
+
+A) Sonuna 100 ekler
+B) Baştan 2. konuma 100 ekler ✅
+C) İlk elemanı 100 yapar
+D) Listeyi ters çevirir
+5. list.remove(5) ne yapar?
+
+A) Listenin 5. indeksini siler
+B) 5 değerini siler ✅
+C) Listenin son elemanını siler
+D) Tüm listeyi siler
+6. pop() metodu ne yapar?
+
+A) Listeyi sıralar
+B) Listeyi temizler
+C) Son elemanı silip geri döner ✅
+D) Listenin başına eleman ekler
+7. list.clear() ne yapar?
+
+A) Tüm listeyi sıfırlar ✅
+B) Sadece son elemanı siler
+C) Hiçbir şey yapmaz
+D) Listeyi sıralar
+8. list[::-1] ne işe yarar?
+
+A) Listeyi sıralar
+B) Listeyi ters çevirir ✅
+C) Listeyi ikiye böler
+D) Hata verir
+9. sorted() fonksiyonu ne döner?
+
+A) Yeni bir sıralı liste ✅
+B) Listeyi siler
+C) Listeyi değiştirir
+D) None döner
+10. .sort() metodu ne yapar?
+
+A) Listeyi ters çevirir
+B) Listeyi sıralar ve aynı listeyi kullanır ✅
+C) Yeni bir liste döner
+D) Hata verir
+11. Aşağıdakilerden hangisi listeleri birleştirmek için kullanılır?
+
+A) *
+B) + ✅
+C) &
+D) =
+12. reversed() fonksiyonu ne döner?
+
+A) Yeni bir ters liste
+B) Listeyi değiştirir
+C) Bir iterator ✅
+D) None
+13. list.reverse() metodu ne döner?
+
+A) Yeni liste
+B) True
+C) None ✅
+D) reversed list
+14. key= parametresi ne işe yarar?
+
+A) Listeyi temizler
+B) Sıralamada özel kurallar tanımlar ✅
+C) Eleman siler
+D) Eleman ekler
+15. enumerate() fonksiyonu ne döner?
+
+A) Sadece indeksler
+B) Sadece elemanlar
+C) (indeks, eleman) çiftleri ✅
+D) Ters liste
+16. zip() fonksiyonu ne işe yarar?
+
+A) Bir listeyi sıkıştırır
+B) Listeleri paralel olarak dolaşır ✅
+C) Listeyi temizler
+D) Liste oluşturur
+17. list = [1, 2]; list += [3] sonucunda ne olur?
+
+A) list = [1, 2, [3]]
+B) list = [1, 2, 3] ✅
+C) list = [3, 1, 2]
+D) Hata verir
+18. list = [1, 2, 3]; list = list + [4] sonucunda id değişir mi?
+
+A) Evet ✅
+B) Hayır
+C) Liste bozulur
+D) Hata verir
+19. Listeyi döngüde silmek neden sorun çıkarır?
+
+A) Python izin vermez
+B) İndeksler kayar, eleman atlanır ✅
+C) Bellek taşar
+D) Listeyi sıfırlar
+20. for i in liste[:] yapısının amacı nedir?
+
+A) Listeyi tersten gezmek
+B) Orijinal listeyi değiştirmeden gezinmek ✅
+C) Listeyi sıralamak
+D) Listeyi iki katına çıkarmak
