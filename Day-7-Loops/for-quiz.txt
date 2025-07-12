@@ -1,0 +1,177 @@
+🎯 1–5: Temel for Döngüsü Yapısı
+
+1️⃣ Aşağıdakilerden hangisi for döngüsünün doğru yazımıdır?
+A) for in liste:
+B) for x liste:
+C) ✅ for x in liste:
+D) foreach x in liste:
+
+2️⃣ range(3) ifadesi hangi sayıları üretir?
+A) 0, 1, 2 ✅
+B) 1, 2, 3
+C) 0, 1, 2, 3
+D) -1, 0, 1
+
+3️⃣ Aşağıdakilerden hangisi for döngüsüyle kullanılabilir?
+A) int
+B) float
+C) ✅ list
+D) bool
+
+4️⃣ for i in range(5): print(i) çıktısı nedir?
+A) 1 2 3 4 5
+B) ✅ 0 1 2 3 4
+C) 0 1 2 3 4 5
+D) 1 2 3 4
+
+5️⃣ for harf in "elma": print(harf) çıktısında kaç satır vardır?
+A) 5
+B) ✅ 4
+C) 3
+D) 6
+🔁 6–10: break, continue, else
+
+6️⃣ break komutu ne yapar?
+A) Döngüyü durdurur ✅
+B) Satır atlar
+C) Döngüyü başa sarar
+D) Listeyi ters çevirir
+
+7️⃣ continue komutu ne yapar?
+A) Döngüyü durdurur
+B) ✅ O turu atlayıp sonraki tura geçer
+C) Kodun tamamını atlar
+D) Döngüyü bitirir
+
+8️⃣ Aşağıdaki durumda else çalışır mı?
+
+for i in range(3):
+    if i == 1:
+        break
+else:
+    print("Bitti")
+
+A) ✅ Hayır
+B) Evet
+C) Her zaman çalışır
+D) Kod hatalıdır
+
+9️⃣ else bloğu ne zaman çalışır?
+A) Her zaman
+B) ✅ Döngü break ile durmazsa
+C) Döngü bitmeden
+D) Koşul sağlanmazsa
+
+🔟 continue komutundan sonra gelen satırlar:
+A) Her zaman çalışır
+B) ✅ Atlanır
+C) break gibi döngüyü durdurur
+D) Geriye döner
+📊 11–15: enumerate, zip, chain, sıralama
+
+1️⃣1️⃣ enumerate() fonksiyonu ne işe yarar?
+A) Listeyi sıralar
+B) ✅ Hem index hem eleman verir
+C) Listeyi ters çevirir
+D) Listeyi siler
+
+1️⃣2️⃣ zip() fonksiyonu ne işe yarar?
+A) Sıkıştırma yapar
+B) ✅ Listeleri eşleştirir
+C) Listeyi ters çevirir
+D) Listeyi birleştirir
+
+1️⃣3️⃣ chain() fonksiyonu ile ilgili hangisi doğrudur?
+A) Sadece sözlüklerde çalışır
+B) Ters döner
+C) ✅ Birden fazla listeyi art arda dolaşır
+D) Liste kopyalar
+
+1️⃣4️⃣ Aşağıdakilerden hangisi listeyi ters dolaştırır?
+A) sorted()
+B) enumerate()
+C) ✅ reversed()
+D) range()
+
+1️⃣5️⃣ sorted(ogrenciler.items(), key=lambda x: x[1], reverse=True) ne yapar?
+A) Sözlükteki anahtarları sıralar
+B) ✅ Sözlüğü değere göre büyükten küçüğe sıralar
+C) Hata verir
+D) Listeyi ters çevirir
+⚠️ 16–20: Hatalar ve Tüyolar
+
+1️⃣6️⃣ for eleman in liste: içinde eleman = 999 yaparsan:
+A) Liste değişir
+B) ✅ Liste değişmez
+C) İlk eleman silinir
+D) Hata verir
+
+1️⃣7️⃣ Döngü sırasında listeye eleman eklersen ne olur?
+A) Liste sıfırlanır
+B) ✅ Karışıklık olabilir / önerilmez
+C) Kod hızlanır
+D) Kod iki kez çalışır
+
+1️⃣8️⃣ for eleman in liste[:] yazmak ne sağlar?
+A) Listeyi ters çevirir
+B) ✅ Listeyi kopyalayıp onun üzerinde döner
+C) İlk elemanı atlar
+D) Listeyi sıralar
+
+1️⃣9️⃣ for dosya in dosyalar: içinde open() yapılırsa dosya yoksa ne olur?
+A) ✅ Hata verir, döngü durur
+B) Otomatik geçer
+C) Yazdırmaya devam eder
+D) Yeni dosya oluşturur
+
+20- try-except bloğu döngü içinde neden önemlidir?
+
+A) Döngüyü hızlandırır
+B) ✅ Hatalı durumlarda programın çökmesini engeller
+C) Belleği temizler
+D) Değerleri sıfırlar
+
+21- reversed() Kullanımı
+
+renkler = ["mavi", "kırmızı", "sarı"]
+
+for renk in reversed(renkler):
+    print(renk)
+
+A) ✅ sarı
+  kırmızı
+  mavi
+B) mavi
+  kırmızı
+  sarı
+C) renkler tersine döner ama yazdırılmaz
+D) Hata verir
+
+22- Liste İçinde Listeyi Tek Döngüyle Gezmek
+
+from itertools import chain
+
+veriler = [[1, 2], [3], [4, 5]]
+
+for x in chain(*veriler):
+    print(x)
+
+A) ✅ 1 2 3 4 5
+B) [1, 2] [3] [4, 5]
+C) 1 [2, 3] 4 5
+D) Hata verir
+
+23- Listeyi Döngüde Silmek
+
+sayilar = [2, 4, 6]
+
+for s in sayilar:
+    sayilar.remove(s)
+
+print(sayilar)
+
+A) []
+B) [2]
+C) ✅ [4]
+D) [2, 4, 6]
+

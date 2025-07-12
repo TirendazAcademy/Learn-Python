@@ -1,0 +1,171 @@
+🧠 1. while döngüsü ne işe yarar?
+
+A) Şart sağlandığı sürece tekrar eder ✅
+B) Yalnızca bir defa çalışır
+C) Rastgele sayılar üretir
+D) Dosya açmak için kullanılır
+
+🔁 2. Aşağıdakilerden hangisi while döngüsü sözdizimi için doğrudur?
+
+A) while (koşul): ✅
+B) while koşul do
+C) if koşul then
+D) repeat until (koşul)
+
+⛔ 3. while döngüsünde hangi durumda döngüye hiç girilmez?
+
+A) Koşul True ise
+B) Koşul False ise ✅
+C) Koşul boş ise
+D) break varsa
+
+🔄 4. while True: ne anlama gelir?
+
+A) Bir kez döner
+B) Döngü her zaman baştan başlar ✅
+C) Koşul yanlışsa çalışır
+D) break çalışmaz
+
+📉 5. Aşağıdaki kod ne yapar?
+
+x = 5
+while x > 0:
+    x -= 1
+    print(x)
+
+A) Sonsuz döngü
+B) 5’ten 0’a kadar sayar
+C) 4’ten 0’a kadar yazdırır ✅
+D) Hata verir
+
+🧨 6. break komutu ne işe yarar?
+
+A) Döngüye devam eder
+B) Döngünün koşulunu değiştirir
+C) Döngüyü sonlandırır ✅
+D) Sadece if içinde kullanılır
+
+↩️ 7. continue komutu ne yapar?
+
+A) Döngüyü durdurur
+B) Döngünün başına döner ✅
+C) Hata verir
+D) Sonsuz döngü oluşturur
+
+📃 8. while döngüsünde else bloğu ne zaman çalışır?
+
+A) Her zaman
+B) break ile çıkılırsa
+C) Döngü doğal biterse ✅
+D) if doğruysa
+
+❌ 9. Aşağıdaki kod sonsuz döngü mü oluşturur?
+
+x = 0
+while x < 5:
+    print(x)
+
+A) Hayır
+B) Evet ✅
+C) Hata verir
+D) Sadece bir kere döner
+
+🔢 10. while döngüsü ile bir listeyi güvenli şekilde boşaltmanın yolu nedir?
+
+A) for eleman in liste
+B) liste.clear()
+C) while liste: liste.pop() ✅
+D) for i in range(len(liste))
+
+🔍 11. Aşağıdakilerden hangisi while döngüsünün tipik kullanım alanı değildir?
+
+A) Belirsiz tekrarlar
+B) Dosya var mı diye kontrol
+C) Sonsuz giriş beklemek
+D) Listenin tüm elemanları tek tek yazdırmak ✅
+🧪 12. while döngüsüyle bir sayı 10’a kadar nasıl saydırılır?
+
+A) while x < 10: ✅
+B) while x = 10:
+C) while x == 10:
+D) while x >= 10:
+
+🧠 13. Kod ne yazdırır?
+
+x = 3
+while x:
+    print(x)
+    x -= 1
+
+A) Hata verir
+B) 2 1 0
+C) 3 2 1 ✅
+D) Sonsuz döngü
+
+⏹️ 14. while True: ile çalışan döngüde çıkış yapmanın en yaygın yolu nedir?
+
+A) return
+B) continue
+C) exit
+D) break ✅
+
+🧩 15. Aşağıdaki kod ne zaman biter?
+
+while True:
+    cevap = input("Bir şey yaz: ")
+    if cevap == "çık":
+        break
+
+A) 5 yazınca
+B) "çık" yazınca ✅
+C) Hata verince
+D) Hiçbir zaman bitmez
+
+🔄 16. while not dosya.exists(): ifadesi ne anlama gelir?
+
+A) Dosya varsa döner
+B) Dosya yoksa döner ✅
+C) Dosya yazılır
+D) Dosya silinir
+
+📏 17. Kodun çıktısı ne olur?
+
+x = 1
+while x <= 3:
+    print(x)
+    x += 1
+else:
+    print("Bitti")
+
+A) 1 2 3 ✅ ve Bitti
+B) 1 2 3
+C) Sadece “Bitti”
+D) Sonsuz döngü
+
+❌ 18. while döngüsünde koşul hiç sağlanmazsa ne olur?
+
+A) else çalışır ✅
+B) break devreye girer
+C) continue atlanır
+D) Sonsuz döngü olur
+
+🧮 19. Kod ne yazdırır?
+
+sayi = 0
+while sayi < 3:
+    sayi += 1
+    if sayi == 2:
+        continue
+    print(sayi)
+
+A) 1 2 3
+B) 1 3 ✅
+C) 2 3
+D) Hata verir
+
+🧼 20. while ile liste boşaltmak neden for’dan daha güvenlidir?
+
+A) Daha kısa yazılır
+B) Eleman silerken indeks kayması olmaz ✅
+C) break kullanılmaz
+D) Python önermez
