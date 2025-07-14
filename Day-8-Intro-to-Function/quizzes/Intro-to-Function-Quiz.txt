@@ -1,0 +1,174 @@
+✅ 1. def anahtar kelimesi ne işe yarar?
+
+A) Değişken tanımlar
+B) Koşul oluşturur
+✅ C) Fonksiyon tanımlar
+D) Döngü oluşturur
+
+✅ 2. Aşağıdakilerden hangisi geçerli bir fonksiyon ismidir?
+
+A) 2fonk
+B) def
+✅ C) hesapla_vergi
+D) print()
+
+✅ 3. return ifadesinin görevi nedir?
+
+A) Ekrana yazı yazar
+✅ B) Fonksiyonun sonucunu geri döndürür
+C) Kullanıcıdan bilgi alır
+D) Döngü başlatır
+
+✅ 4. print() fonksiyonu ne döndürür?
+
+✅ A) None
+B) Yazdırılan metni
+C) Sayı
+D) String
+
+✅ 5. Aşağıdaki fonksiyon ne döner?
+
+def f():
+    return 3 + 4
+
+A) 34
+✅ B) 7
+C) '3 + 4'
+D) None
+
+✅ 6. return ifadesi çalıştığında ne olur?
+
+A) Kod çalışmayı durdurur ve fonksiyon kapanır
+✅ B) Fonksiyondan çıkılır ve sonuç geri verilir
+C) Kod satırı atlanır
+D) Döngü başlar
+
+✅ 7. return yazılmazsa fonksiyon ne döner?
+
+A) Hata verir
+B) 0
+✅ C) None
+D) Boş liste
+
+✅ 8. Fonksiyon nasıl çağrılır?
+
+A) def fonk
+✅ B) fonk()
+C) run fonk
+D) call fonk
+
+✅ 9. Fonksiyonda print() varsa sonucu başka yerde kullanabilir miyiz?
+
+A) Evet
+✅ B) Hayır, çünkü print() sadece yazdırır
+C) Kısmen
+D) Sadece döngüde evet
+
+✅ 10. def topla(a, b): return a + b fonksiyonunun çıktısı nedir?
+
+topla(3, 4)
+
+✅ A) 7
+B) 34
+C) a + b
+D) None
+
+✅ 11. Aşağıdaki kod ne yazdırır?
+
+def yaz():
+    print("Merhaba")
+
+sonuc = yaz()
+print(sonuc)
+
+A) Merhaba Merhaba
+✅ B) Merhaba, None
+C) None
+D) Hata
+
+✅ 12. return ile print() arasındaki fark nedir?
+
+✅ A) return veri verir, print yazdırır
+B) Aynı işi yapar
+C) Biri döngüdür
+D) return sadece sayıları döndürür
+
+✅ 13. Bu kodun çıktısı nedir?
+
+def getir():
+    return "Ali"
+
+print(getir() * 2)
+
+A) Hata
+✅ B) AliAli
+C) 0
+D) None
+
+✅ 14. return ifadesi bir fonksiyonun ortasında kullanılabilir mi?
+
+✅ A) Evet
+B) Hayır
+C) Sadece son satırda
+D) Sadece koşul içinde
+
+✅ 15. Bu fonksiyon ne döner?
+
+def kontrol(x):
+    if x > 0:
+        return "Pozitif"
+    else:
+        return "Negatif"
+
+kontrol(3) çağrılırsa?
+
+✅ A) Pozitif
+B) Negatif
+C) None
+D) Hata
+
+✅ 16. Fonksiyondan erken çıkmak için ne kullanılır?
+
+A) break
+✅ B) return
+C) exit
+D) continue
+
+✅ 17. return True ne işe yarar?
+
+✅ A) Fonksiyon sonucu olarak True verir
+B) Fonksiyonu başlatır
+C) Değişken tanımlar
+D) Ekrana yazar
+
+✅ 18. Bu kodun çıktısı nedir?
+
+def cift_mi(sayi):
+    return sayi % 2 == 0
+
+print(cift_mi(4))
+
+A) 0
+✅ B) True
+C) False
+D) Hata
+
+✅ 19. return ile birden fazla değer nasıl döndürülür?
+
+A) Virgül değil, sadece listeyle
+B) return [a b c]
+✅ C) return a, b, c
+D) return(a + b + c)
+
+✅ 20. Bu kod ne döner?
+
+def ayir():
+    return "Ali", 25, "İstanbul"
+
+bilgi = ayir()
+print(bilgi)
+
+A) Ali 25 İstanbul
+✅ B) ('Ali', 25, 'İstanbul')
+C) None
+D) Hata

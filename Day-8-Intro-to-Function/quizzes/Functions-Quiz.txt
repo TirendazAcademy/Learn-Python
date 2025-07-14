@@ -1,0 +1,176 @@
+✅ 1. Aşağıdaki fonksiyon ne döner?
+
+def ayir():
+    return "Ali", 25
+
+A) "Ali25"
+B) {'ad': 'Ali', 'yas': 25}
+✅ C) ('Ali', 25)
+D) None
+
+✅ 2. Bu kodun çıktısı nedir?
+
+ad, yas = ayir()
+print(ad)
+
+A) 25
+✅ B) Ali
+C) ('Ali', 25)
+D) Hata
+
+✅ 3. return x, y, z ifadesi ne tür veri döndürür?
+
+A) liste
+✅ B) tuple
+C) string
+D) dict
+
+✅ 4. Varsayılan değer nedir?
+
+A) Her zaman yazılması gereken değer
+✅ B) Yazılmazsa devreye giren otomatik değer
+C) Hatalı değer
+D) return ifadesi
+
+✅ 5. Aşağıdaki fonksiyonda b parametresinin varsayılan değeri nedir?
+
+def fonk(a, b=10):
+    return a + b
+
+A) 0
+B) Yazılmalı
+✅ C) 10
+D) None
+
+✅ 6. Aşağıdaki çağrım geçerli midir?
+
+def yaz(mesaj="Merhaba"):
+    print(mesaj)
+
+yaz()
+
+✅ A) Evet
+B) Hayır
+C) Sadece parametreyle çalışır
+D) Hata verir
+
+✅ 7. *args ne işe yarar?
+
+A) Anahtar-değer tutar
+✅ B) Belirsiz sayıda pozisyonel argüman alır
+C) Değişken oluşturur
+D) return ifadesidir
+
+✅ 8. *args veri tipi nedir?
+
+A) liste
+✅ B) tuple
+C) dict
+D) string
+
+✅ 9. Aşağıdaki fonksiyon ne yapar?
+
+def topla(*sayilar):
+    return sum(sayilar)
+
+A) Hatalı
+✅ B) Kaç sayı gelirse toplar
+C) Sadece 2 sayı alır
+D) Stringleri toplar
+
+✅ 10. **kwargs ne işe yarar?
+
+A) Pozisyonel değer tutar
+✅ B) Anahtar=değer şeklinde argümanları alır
+C) Yalnızca liste alır
+D) Sözlük oluşturur
+
+✅ 11. **kwargs tipi nedir?
+
+A) tuple
+B) liste
+✅ C) dict
+D) set
+
+✅ 12. Bu kodun çıktısı nedir?
+
+def bilgi(**kwargs):
+    return kwargs["ad"]
+
+bilgi(ad="Ali", yas=30)
+
+A) 30
+✅ B) Ali
+C) {'ad': 'Ali'}
+D) None
+✅ 13. Bu çağrım doğru mudur?
+
+def selam(ad, soyad):
+    print(f"Merhaba {ad} {soyad}")
+
+bilgi = {"ad": "Ayşe", "soyad": "Yılmaz"}
+selam(**bilgi)
+
+✅ A) Evet
+B) Hayır
+C) * olmalıydı
+D) Hata verir
+
+✅ 14. *args ve **kwargs bir arada kullanılabilir mi?
+
+A) Hayır
+✅ B) Evet
+C) Sadece class içinde
+D) return ile birlikteyse evet
+
+✅ 15. Bu fonksiyonda sıralama doğru mudur?
+
+def fonk(a, *args, **kwargs):
+    pass
+
+✅ A) Evet
+B) **kwargs önce gelmeli
+C) *args sona gelmeli
+D) Hatalı yazım
+
+✅ 16. Docstring ne işe yarar?
+
+A) Ekrana çıktı verir
+B) Fonksiyonu çalıştırır
+✅ C) Fonksiyon hakkında bilgi verir
+D) Hata mesajıdır
+
+✅ 17. Aşağıdakilerden hangisi geçerli bir docstring formatıdır?
+
+def fonk():
+    ...
+
+A) # Açıklama satırı
+✅ B) """Bu fonksiyon ..."""
+C) (docstring)
+D) print("Açıklama")
+
+✅ 18. Fonksiyonlarda tür belirten açıklamalara ne denir?
+
+A) Docformat
+✅ B) Annotation
+C) Hint string
+D) Return tipi
+
+✅ 19. Aşağıdaki -> int kısmı ne işe yarar?
+
+
+def kare(x: int) -> int:
+    return x * x
+
+✅ A) Fonksiyonun int döndüreceğini belirtir
+B) Zorunlu tür kontrolüdür
+C) x değişkenini tanımlar
+D) Hata üretir
+
+✅ 20. await ifadesi ne işe yarar?
+
+A) Fonksiyonu çağırır
+✅ B) Asenkron işlemi bekler
+C) Döngü başlatır
+D) return yerine geçer
