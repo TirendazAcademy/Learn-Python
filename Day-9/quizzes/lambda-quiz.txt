@@ -1,0 +1,184 @@
+✅ 1. Lambda Fonksiyonu Nedir?
+
+Soru: Lambda fonksiyonu ne işe yarar?
+A) Liste oluşturur
+B) Geçici, isimsiz fonksiyon tanımlar
+C) Değişken tanımlar
+D) Dosya okur
+Doğru: B
+✅ 2. Lambda Fonksiyonu Nasıl Yazılır?
+
+Soru: Aşağıdakilerden hangisi doğru bir lambda fonksiyonu tanımıdır?
+A) def x: return x + 1
+B) lambda x: return x + 1
+C) lambda x: x + 1
+D) x => x + 1
+Doğru: C
+✅ 3. Lambda fonksiyonları neler içeremez?
+
+Soru: Lambda fonksiyonları aşağıdakilerden hangisini içeremez?
+A) if-else
+B) return
+C) matematiksel işlem
+D) parametre
+Doğru: B
+✅ 4. Aşağıdaki lambda fonksiyonu ne yapar?
+
+f = lambda x: x * 2
+print(f(4))
+
+A) 6
+B) 8
+C) 4
+D) Hata verir
+Doğru: B
+✅ 5. Lambda fonksiyonlar neden kullanılır?
+
+Soru: Lambda fonksiyonlar genellikle ne zaman tercih edilir?
+A) Değişken tanımlarken
+B) Dosya açarken
+C) Tek satırlık işlevler gerektiğinde
+D) Büyük projelerde
+Doğru: C
+✅ 6. Lambda ile toplama
+
+topla = lambda a, b: a + b
+print(topla(3, 5))
+
+A) 8
+B) 35
+C) Hata
+D) 15
+Doğru: A
+✅ 7. Lambda ile string birleştirme
+
+f = lambda s: s + " Dünya"
+print(f("Merhaba"))
+
+A) Merhaba
+B) Dünya
+C) Merhaba Dünya
+D) Hata verir
+Doğru: C
+✅ 8. Lambda ve filter
+
+liste = [1, 2, 3, 4, 5]
+sonuc = list(filter(lambda x: x % 2 == 0, liste))
+
+A) [1, 3, 5]
+B) [2, 4]
+C) [2, 3, 4]
+D) [1, 2, 3, 4, 5]
+Doğru: B
+✅ 9. Lambda ve map
+
+liste = [1, 2, 3]
+sonuc = list(map(lambda x: x**2, liste))
+
+A) [1, 4, 9]
+B) [2, 4, 6]
+C) [1, 2, 3]
+D) [1, 8, 27]
+Doğru: A
+✅ 10. Lambda ve reduce
+
+from functools import reduce
+print(reduce(lambda x, y: x + y, [1, 2, 3, 4]))
+
+A) 10
+B) 24
+C) [10]
+D) Hata
+Doğru: A
+✅ 11. Lambda iç içe kullanım
+
+f = lambda x: lambda y: x + y
+print(f(3)(4))
+
+A) 7
+B) 34
+C) 12
+D) Hata verir
+Doğru: A
+✅ 12. Lambda ile sıralama
+
+liste = [(1, 2), (3, 1), (5, 0)]
+print(sorted(liste, key=lambda x: x[1]))
+
+A) [(1, 2), (3, 1), (5, 0)]
+B) [(5, 0), (3, 1), (1, 2)]
+C) [(1, 2), (5, 0), (3, 1)]
+D) Hata verir
+Doğru: B
+✅ 13. Lambda ile büyükten küçüğe sıralama
+
+liste = [3, 1, 4, 2]
+print(sorted(liste, key=lambda x: -x))
+
+A) [1, 2, 3, 4]
+B) [4, 3, 2, 1]
+C) [3, 1, 4, 2]
+D) Hata
+Doğru: B
+✅ 14. Hangi kullanım yanlıştır?
+
+A) lambda x, y: x + y
+B) lambda: 3 + 4
+C) lambda x: return x * 2
+D) lambda x: x ** 2
+Doğru: C
+✅ 15. Lambda ile boolean dönüş
+
+f = lambda x: x > 10
+print(f(12))
+
+A) 10
+B) True
+C) False
+D) Hata
+Doğru: B
+✅ 16. Lambda ile if-else
+
+f = lambda x: "Pozitif" if x > 0 else "Negatif"
+print(f(-3))
+
+A) Pozitif
+B) Negatif
+C) 0
+D) Hata verir
+Doğru: B
+✅ 17. Lambda nerelerde kullanılmaz?
+
+Soru: Lambda aşağıdakilerden hangisi için uygun değildir?
+A) Tek satırlık işlemler
+B) Basit matematiksel fonksiyonlar
+C) İç içe döngüler
+D) Liste sıralama işlemleri
+Doğru: C
+✅ 18. Aşağıdaki kullanımın çıktısı nedir?
+
+(lambda x: x + 1)(5)
+
+A) 5
+B) 6
+C) lambda x + 1
+D) Hata
+Doğru: B
+✅ 19. Lambda ile liste filtreleme
+
+sayilar = [0, 1, 2, 3, 4]
+print(list(filter(lambda x: x, sayilar)))
+
+A) [0, 1, 2, 3, 4]
+B) [1, 2, 3, 4]
+C) [0]
+D) []
+Doğru: B
+✅ 20. Lambda fonksiyonlarının sınırlaması nedir?
+
+Soru: Lambda fonksiyonlarının dezavantajı nedir?
+A) Çok uzun kod yazılamaz
+B) İçine fonksiyon tanımlanamaz
+C) Yalnızca tek ifade içerir
+D) Hepsi
+Doğru: D
