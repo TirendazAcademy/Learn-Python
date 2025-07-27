@@ -1,0 +1,180 @@
+1. Python’da istisnalar (exceptions) hangi aşamada ortaya çıkar?
+
+A) Kod yazılırken
+B) Program çalıştırılmadan önce (derleme zamanı)
+✅ C) Program çalışırken (çalışma zamanı)
+D) Kod dosyası kaydedildiğinde
+
+2. try bloğunun görevi nedir?
+✅ A) Hata verebilecek kodu barındırır
+B) Programı durdurur
+C) Hataları bastırır
+D) Fonksiyon tanımlar
+
+3. except bloğu ne zaman çalışır?
+A) Kod düzgün çalıştığında
+✅ B) try içinde hata oluştuğunda
+C) Her zaman
+D) else çalışmadığında
+
+4. else bloğu hangi durumda çalışır?
+A) Hata oluştuğunda
+✅ B) try bloğunda hiç hata olmazsa
+C) finally çalışmazsa
+D) return varsa
+
+5. finally bloğu ne zaman çalışır?
+A) Sadece hata varsa
+B) else çalışmazsa
+✅ C) Her durumda
+D) except çalışmazsa
+
+6. Aşağıdakilerden hangisi Python’daki bir istisna türü değildir?
+A) ValueError
+B) TypeError
+✅ C) ReadFileError
+D) ZeroDivisionError
+
+7. Python’da bilinçli olarak hata fırlatmak için hangi ifade kullanılır?
+A) throw
+✅ B) raise
+C) error
+D) try
+
+8. raise ValueError("Geçersiz giriş") ne yapar?
+A) Girişi düzeltir
+B) Programı devam ettirir
+✅ C) Hata oluşturur
+D) return eder
+
+9. Tüm yakalanabilir istisnaların atası nedir?
+A) Error
+✅ B) Exception
+C) Warning
+D) SystemError
+
+10. type(e) ne işe yarar?
+A) Hata mesajını verir
+✅ B) Hatanın sınıfını döndürür
+C) Hatanın çözümünü verir
+D) Hata oluşum sırasını gösterir
+
+11. try içinde return olsa bile finally çalışır mı?
+✅ A) Evet
+B) Hayır
+C) Sadece else varsa
+D) Çalışmaz
+
+12. "abc"[5] ifadesi ne tür hata üretir?
+A) ValueError
+✅ B) IndexError
+C) NameError
+D) KeyError
+
+13. raise ... from ... ifadesi ne işe yarar?
+A) Programı sıfırlar
+✅ B) Zincirli istisna üretir
+C) else bloğunu çalıştırır
+D) return işlemini atlar
+
+14. except ValueError as e: ifadesinde e nedir?
+✅ A) Hata nesnesi
+B) Mesaj
+C) Sayı
+D) Fonksiyon
+
+15. finally bloğu hangi durumda çalışmaz?
+A) Hata varsa
+✅ B) Sistem zorla durursa (örn. os._exit())
+C) return varsa
+D) except çalışmazsa
+
+16. "on" → int("on") ne tür hata üretir?
+✅ A) ValueError
+B) TypeError
+C) AttributeError
+D) KeyError
+
+17. Aşağıdakilerden hangisi birden fazla istisnayı tek seferde yakalar?
+A) except:
+✅ B) except (ValueError, TypeError):
+C) raise Exception
+D) try-except-finally
+
+18. Özel istisna sınıfı oluşturmak için hangi yapı doğrudur?
+✅ A) class MyError(Exception):
+B) def MyError:
+C) raise MyError(Exception):
+D) if MyError:
+
+19. Kullanıcının "abc" girmesi hangi istisnayı oluşturur?
+✅ A) ValueError
+B) TypeError
+C) RuntimeError
+D) IndexError
+
+20. print(type(e).__name__) ne döner?
+A) e'nin değeri
+B) Hata nesnesi
+✅ C) Hatanın sınıf ismi (örn. ValueError)
+D) traceback
+
+21. raise Exception("Bir hata oluştu") ne yapar?
+A) Hata mesajı gizler
+✅ B) Hata oluşturur ve programı durdurur
+C) Program devam eder
+D) finally çalışmaz
+
+22. try: içinde int("abc") varsa ve yakalanmazsa ne olur?
+✅ A) ValueError oluşur
+B) TypeError oluşur
+C) Kod else'ye geçer
+D) return edilir
+
+23. finally bloğunda ne yapılabilir?
+A) Sadece return
+B) Hiçbir şey yazılamaz
+✅ C) Temizlik işlemleri (örneğin mesaj, kapanış)
+D) Kod atlanır
+
+24. raise ifadesi ne yapar?
+A) Hataları yok sayar
+B) finally bloğunu atlar
+✅ C) Yeni bir hata fırlatır
+D) return işlemini zorlar
+
+25. class Hata(Exception): pass ifadesi ne yapar?
+A) Hata mesajı üretir
+✅ B) Yeni bir istisna sınıfı tanımlar
+C) Programı baştan başlatır
+D) Kodları yok sayar
+
+26. except Exception: ne işe yarar?
+✅ A) Tüm istisnaları genel olarak yakalar
+B) Sadece SyntaxError yakalar
+C) Hiçbir hata yakalamaz
+D) return ifadesini çalıştırır
+
+27. Aşağıdaki hata neden oluşur? print("elma"[10])
+A) NameError
+✅ B) IndexError
+C) ValueError
+D) SyntaxError
+
+28. Kullanıcı -5 yaş girerse ne tür hata fırlatılabilir?
+A) IndexError
+✅ B) ValueError
+C) TypeError
+D) AttributeError
+
+29. raise RuntimeError("İşlem başarısız") neden kullanılır?
+✅ A) Genel hata mesajı vermek için
+B) return ifadesiyle birlikte çalışır
+C) Sadece dosya hataları için
+D) Syntax hataları için
+
+30. raise tek başına kullanılırsa ne olur?
+A) Kod durur ama hata oluşmaz
+✅ B) En son yakalanan hata yeniden fırlatılır
+C) Hata mesajı silinir
+D) return ile karışır
