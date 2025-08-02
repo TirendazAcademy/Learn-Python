@@ -1,0 +1,228 @@
+Dosya Fonksiyonları 
+
+🔹 Temel Sorular (1–10)
+
+    tell() fonksiyonu ne işe yarar?
+    A) Dosyayı kapatır
+    B) İmlecin bulunduğu konumu gösterir ✅
+    C) Dosyayı siler
+    D) Dosyayı yeniden yazar
+
+    seek(0) ne yapar?
+    A) Dosyanın sonuna gider
+    B) Dosyanın başına gider ✅
+    C) Dosyanın ortasına gider
+    D) Dosyayı kapatır
+
+    truncate(5) fonksiyonu ne yapar?
+    A) Dosyayı siler
+    B) Dosyayı 5 karakter uzunluğunda keser ✅
+    C) Dosyanın ilk 5 karakterini gösterir
+    D) Dosyayı kapatır
+
+    flush() fonksiyonunun amacı nedir?
+    A) Dosyayı kapatır
+    B) Veriyi hemen diske yazar ✅
+    C) Dosyayı siler
+    D) Dosyayı yeniden açar
+
+    close() fonksiyonu çağrılmazsa ne olur?
+    A) Hiçbir şey olmaz
+    B) Dosya açık kalabilir ✅
+    C) Dosya kaybolur
+    D) Dosya okunamaz
+
+    with open(...) kullanmanın avantajı nedir?
+    A) Dosyayı otomatik kapatır ✅
+    B) Dosyayı siler
+    C) Dosyayı kopyalar
+    D) Dosyayı sadece okur
+
+    f.closed True dönerse bu ne demektir?
+    A) Dosya açıktır
+    B) Dosya kapalıdır ✅
+    C) Dosya boş
+    D) Dosya okunamaz
+
+    seek(0, 2) imleci nereye götürür?
+    A) Dosya başına
+    B) Dosya ortasına
+    C) Dosya sonuna ✅
+    D) Hiçbir yere
+
+    truncate() parametresiz çağrılırsa ne olur?
+    A) Dosya tamamen silinir
+    B) İmlecin bulunduğu yerden sonrası silinir ✅
+    C) Dosya kopyalanır
+    D) Dosya yeniden açılır
+
+    Dosya açıldıktan sonra kapatılmadığında ne olabilir?
+    A) Bellek sızıntısı olabilir ✅
+    B) Daha hızlı çalışır
+    C) Otomatik kapanır
+    D) Dosya boyutu artar
+
+🔹 Kod Tabanlı Sorular (11–20)
+
+    Çıktısı ne olur?
+
+with open("a.txt", "w+") as f:
+    f.write("Python")
+    print(f.tell())
+
+A) 0
+B) 6 ✅
+C) 5
+D) Hata
+
+    Çıktısı ne olur?
+
+with open("a.txt", "w+") as f:
+    f.write("Merhaba")
+    f.seek(0)
+    print(f.read(3))
+
+A) Mer ✅
+B) erb
+C) rha
+D) aba
+
+✅ Doğru cevap: A
+
+    f.seek(3) imleci nereye götürür?
+    A) Başlangıçtan 3 byte sonrasına ✅
+    B) Dosyanın ortasına
+    C) Dosyanın sonuna
+    D) Dosyanın başına
+
+    Aşağıdaki kodun çıktısı ne olur?
+
+with open("b.txt", "w+") as f:
+    f.write("ABCDE")
+    f.seek(2)
+    f.truncate()
+    f.seek(0)
+    print(f.read())
+
+A) ABCDE
+B) AB ✅
+C) CDE
+D) Hata
+
+    flush() kullanılmazsa ne olabilir?
+    A) Veriler hemen diske yazılmayabilir ✅
+    B) Dosya kapanır
+    C) Dosya kısalır
+    D) Hata oluşur
+
+    Aşağıdakilerden hangisi Context Manager değildir?
+    A) with open(...) ✅
+    B) for döngüsü
+    C) with sqlite3.connect(...)
+    D) with open("f.txt")
+
+    Çıktısı ne olur?
+
+with open("c.txt", "w+") as f:
+    f.write("Hello\nWorld")
+    f.seek(6)
+    print(f.read())
+
+A) Hello
+B) World ✅
+C) oWorld
+D) ld
+
+    f.tell() ile f.seek() arasındaki fark nedir?
+    A) tell konumu verir, seek konumu değiştirir ✅
+    B) ikisi de aynı
+    C) tell dosyayı kapatır
+    D) seek dosyayı kapatır
+
+    Dosya otomatik kapanması için hangisi kullanılmalı?
+    A) close()
+    B) flush()
+    C) with open(...) ✅
+    D) truncate()
+
+    Çıktısı ne olur?
+
+with open("d.txt", "w+") as f:
+    f.write("Python")
+    f.seek(0)
+    f.truncate(3)
+    f.seek(0)
+    print(f.read())
+
+A) Python
+B) Pyt ✅
+C) hon
+D) Hata
+🔹 Karışık/Uygulamalı Sorular (21–30)
+
+    seek(0, 1) imleci nereye götürür?
+    A) Başa
+    B) Mevcut konuma ✅
+    C) Sona
+    D) Silmeye
+
+    Dosya kapalı mı kontrol etmek için hangi özellik kullanılır?
+    A) f.opened
+    B) f.closed ✅
+    C) f.end
+    D) f.status
+
+    truncate(0) ne yapar?
+    A) Dosyayı boşaltır ✅
+    B) Dosyayı kapatır
+    C) Dosyayı okur
+    D) Dosyayı kopyalar
+
+    flush() en çok hangi durumda faydalıdır?
+    A) Log dosyası yazarken ✅
+    B) Dosya okumada
+    C) Dosya silmede
+    D) Dosya kapatmada
+
+    Aşağıdakilerden hangisi yanlıştır?
+    A) close() dosyayı kapatır
+    B) flush() veriyi diske yazar
+    C) tell() dosyanın boyutunu verir ❌ (konumu verir)
+    D) seek() imleci taşır
+
+    Çıktısı ne olur?
+
+with open("e.txt", "w+") as f:
+    f.write("Data Science")
+    f.seek(5)
+    print(f.read(3))
+
+A) Sci ✅
+B) ata
+C) Dat
+D) ence
+
+    with open(...) as f: yapısında f neyi temsil eder?
+    A) Dosya nesnesi ✅
+    B) Dosya adı
+    C) Dosya boyutu
+    D) Dosya yolu
+
+    seek(0, 2) ile truncate() birleşirse ne olur?
+    A) Dosya değişmez
+    B) Dosya tamamen silinir ✅
+    C) Dosya baştan okunur
+    D) Hata oluşur
+
+    Dosya açıkken f.closed ne döner?
+    A) True
+    B) False ✅
+    C) None
+    D) Hata
+
+    with open("f.txt", "w") as f: yapısında, with bloğu bittiğinde ne olur?
+    A) Dosya otomatik kapanır ✅
+    B) Dosya otomatik silinir
+    C) Dosya kopyalanır
+    D) Dosya boşaltılır
+

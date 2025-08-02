@@ -1,0 +1,213 @@
+Kahoot Soruları (Dosya Okuma)
+
+🟢 Temel Sorular
+
+    Python’da dosya açmak için hangi fonksiyon kullanılır?
+    A) open() ✅
+    B) file()
+    C) openfile()
+    D) read()
+
+    open("data.txt", "r") ifadesi dosyayı hangi modda açar?
+    A) Yazma
+    B) Okuma ✅
+    C) Ekleme
+    D) Silme
+
+    read() metodu ne yapar?
+    A) Dosyaya yazar
+    B) Dosyayı kapatır
+    C) Dosyanın tamamını okur ✅
+    D) Dosyayı siler
+
+    read(5) ne döndürür?
+    A) İlk 5 satır
+    B) İlk 5 kelime
+    C) İlk 5 karakter ✅
+    D) Son 5 karakter
+
+    readline() metodu ne döndürür?
+    A) Tüm dosya
+    B) Bir satır ✅
+    C) Son satır
+    D) Satırların listesini
+
+    readlines() ne döndürür?
+    A) String
+    B) Dictionary
+    C) List ✅
+    D) Integer
+
+    Dosya imlecinin (cursor) konumunu öğrenmek için hangi metot kullanılır?
+    A) seek()
+    B) point()
+    C) tell() ✅
+    D) cursor()
+
+    Dosyanın başına geri dönmek için hangi komut kullanılır?
+    A) reset()
+    B) seek(0) ✅
+    C) tell(0)
+    D) rewind()
+
+    Dosya okurken belleği en verimli kullanan yöntem hangisidir?
+    A) read()
+    B) readlines()
+    C) for line in file ✅
+    D) readline()
+
+    Dosya bulunamazsa hangi hata türü oluşur?
+    A) IOError
+    B) FileError
+    C) FileNotFoundError ✅
+    D) OSError
+
+🟡 Orta Seviye Sorular
+
+    with open("dosya.txt", "r") as f: ifadesinde with neden kullanılır?
+    A) Daha hızlı çalışmak için
+    B) Dosyayı otomatik kapatmak için ✅
+    C) Hata vermemek için
+    D) Belleği boşaltmak için
+
+    for line in f: döngüsü dosyayı nasıl okur?
+    A) Tüm dosyayı bir defada
+    B) Satır satır ✅
+    C) Kelime kelime
+    D) Karakter karakter
+
+    Aşağıdaki kod ne yazdırır?
+
+f = open("test.txt", "r")
+print(f.read(0))
+
+A) İlk karakter
+B) "" (boş string) ✅
+C) Hata
+D) None
+
+    f.seek(0, 2) ne işe yarar?
+    A) Dosya başına gider
+    B) Dosya sonuna gider ✅
+    C) Dosyayı siler
+    D) İmleci 2. karaktere götürür
+
+    f.readline(4) ne döndürür?
+    A) 4 satır
+    B) 4 karakter ✅
+    C) 4 kelime
+    D) Tüm satır
+
+    Dosya okuma sırasında satır sonu karakteri neden boşluk gibi görünür?
+    A) Çünkü \n ekrana görünmez ama alt satıra geçer ✅
+    B) Çünkü dosya bozulmuştur
+    C) Çünkü Windows izin vermez
+    D) Çünkü Python otomatik boşluk koyar
+
+    Büyük dosyaları okurken hangi yöntem önerilir?
+    A) read()
+    B) readlines()
+    C) for line in file ✅
+    D) readline(100000)
+
+    Dosya kapatmayı unuttuğumuzda ne olabilir?
+    A) Hiçbir şey olmaz
+    B) Bellek sızıntısı ve kilitlenmeler olabilir ✅
+    C) Dosya silinir
+    D) Python kapanır
+
+    Aşağıdaki kod ne yazdırır?
+
+with open("a.txt", "r") as f:
+    f.read(3)
+    print(f.tell())
+
+A) 0
+B) 3 ✅
+C) 1
+D) Hata
+
+    seek(-2, 2) ne demektir?
+    A) Baştan 2 karakter oku
+    B) Sonundan 2 karakter geri git ✅
+    C) Baştan 2. karaktere git
+    D) 2 satır atla
+
+🔴 Zor Sorular
+
+    Dosya okurken hangi durumlarda UnicodeDecodeError alınır?
+    A) Yanlış encoding kullanıldığında ✅
+    B) Dosya boş olduğunda
+    C) Dosya yokken
+    D) Dosya kilitliyken
+
+    list(f) ifadesi ne yapar?
+    A) Dosyayı siler
+    B) Satırları listeye dönüştürür ✅
+    C) Dosyanın uzunluğunu verir
+    D) Dosya imlecini kapatır
+
+    Aşağıdaki kod çıktısı nedir?
+
+with open("b.txt", "r") as f:
+    print(f.readline(), end="")
+    print(f.readline(), end="")
+
+Dosyada:
+
+Ali
+Ayşe
+
+A) AliAyşe ✅
+B) Ali Ayşe
+C) Ali
+Ayşe
+D) Hata
+
+    f.read(1000) çağrıldığında ama dosya sadece 200 karakterse ne olur?
+    A) Hata
+    B) 200 karakter döner ✅
+    C) 1000 karaktere boşluk ekler
+    D) None döner
+
+    Dosya imlecinin son konumunu öğrenmek için ne yapılır?
+    A) f.read()
+    B) f.seek(0, 2); f.tell() ✅
+    C) f.end()
+    D) len(f)
+
+    with kullanılmazsa dosya kapatmak için ne yapılmalı?
+    A) f.close() ✅
+    B) f.end()
+    C) close(f)
+    D) shutdown()
+
+    Dosyada 3 satır var. readlines()[2] neyi döndürür?
+    A) 1. satır
+    B) 2. satır
+    C) 3. satır ✅
+    D) Hata
+
+    Aşağıdaki kod ne yapar?
+
+try:
+    f = open("olmayan.txt")
+except FileNotFoundError:
+    print("Dosya bulunamadı")
+
+A) Hata verir
+B) "Dosya bulunamadı" yazdırır ✅
+C) Dosya oluşturur
+D) None döner
+
+    for line in f: döngüsü neden bellek dostudur?
+    A) Tüm dosyayı belleğe yükler
+    B) Satırları tek tek okur ✅
+    C) Dosyayı siler
+    D) Dosyayı kapatır
+
+    Python’da dosya yollarını yönetmek için hangi modül sıkça kullanılır?
+    A) os ✅
+    B) sys
+    C) file
+    D) path

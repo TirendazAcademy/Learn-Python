@@ -1,0 +1,195 @@
+--- Kahoot – Dosya İşlemleri
+
+🟢 Kolay Sorular (1–10)
+
+    Python’da bir dosya açmak için hangi fonksiyon kullanılır?
+    A) file()
+    B) open() ✅
+    C) read()
+    D) write()
+
+    "r" modu ne işe yarar?
+    A) Dosya oluşturur
+    B) Dosyaya ekler
+    C) Dosyayı okur ✅
+    D) Dosyayı siler
+
+    Dosya açıldıktan sonra kapatmak için hangi fonksiyon kullanılır?
+    A) stop()
+    B) close() ✅
+    C) end()
+    D) exit()
+
+    "w" modu dosyada ne yapar?
+    A) Sona ekler
+    B) Okur
+    C) İçeriği siler ve yeniden yazar ✅
+    D) Hiçbir şey yapmaz
+
+    Dosya yoksa ve "r" modunda açmaya çalışırsak ne olur?
+    A) Yeni dosya oluşturur
+    B) Hata verir ✅
+    C) Hiçbir şey olmaz
+    D) Dosya kapanır
+
+    "a" modu dosyada ne yapar?
+    A) İçeriği siler
+    B) Sona ekler ✅
+    C) Dosyayı kapatır
+    D) Hata verir
+
+    "x" modu dosya varsa ne yapar?
+    A) İçeriği siler
+    B) Dosyayı okur
+    C) Hata verir ✅
+    D) Dosyaya ekler
+
+    Aşağıdakilerden hangisi ikili (binary) dosya açma modudur?
+    A) "r"
+    B) "rb" ✅
+    C) "a"
+    D) "w"
+
+    Dosyanın açık mı kapalı mı olduğunu anlamak için hangi özellik kullanılır?
+    A) .end
+    B) .done
+    C) .closed ✅
+    D) .status
+
+    with open("dosya.txt", "r") as f: ifadesinin avantajı nedir?
+    A) Dosyayı kalıcı açar
+    B) Dosyayı otomatik kapatır ✅
+    C) Dosyayı şifreler
+    D) Dosyayı siler
+
+🟡 Orta Seviye Sorular (11–20)
+
+    "rb" modunda okunan veri hangi türdedir?
+    A) str
+    B) int
+    C) bytes ✅
+    D) list
+
+    "wb" modu dosyada ne yapar?
+    A) Binary okuma
+    B) Binary yazma ✅
+    C) Metin okuma
+    D) Sona ekleme
+
+    Bir dosyanın boyutunu byte cinsinden bulmak için hangi fonksiyon kullanılır?
+    A) os.size()
+    B) len(data) ✅
+    C) count()
+    D) file_length()
+
+    f.write("Merhaba") yazıldığında dosyada satır atlamak için ne eklemeliyiz?
+    A) \t
+    B) \s
+    C) \n ✅
+    D) \
+
+    "w" ile "a" arasındaki temel fark nedir?
+    A) "w" ekler, "a" siler
+    B) "w" siler, "a" sona ekler ✅
+    C) İkisi aynı
+    D) "a" okur
+
+    "x" ve "w" arasındaki fark nedir?
+    A) "x" hata verir, "w" içeriği siler ✅
+    B) "w" hata verir, "x" içeriği siler
+    C) İkisi aynı
+    D) "x" sadece okur
+
+    Aşağıdakilerden hangisi satır satır okuma yöntemidir?
+    A) read()
+    B) readline() ✅
+    C) readlines()
+    D) print()
+
+    seek(0) fonksiyonu ne yapar?
+    A) Dosyanın boyutunu sıfırlar
+    B) Dosya işaretçisini başa alır ✅
+    C) Dosyayı kapatır
+    D) Dosyayı siler
+
+    tell() fonksiyonu ne döner?
+    A) Dosya satır sayısı
+    B) Dosyanın şu anki okuma/yazma konumu ✅
+    C) Dosyanın adı
+    D) Dosyanın uzantısı
+
+    "r+" modu hangi işlemleri yapabilir?
+    A) Sadece okuma
+    B) Sadece yazma
+    C) Hem okuma hem yazma ✅
+    D) Hiçbiri
+
+🔴 Zor Sorular (21–30)
+
+    Aşağıdaki kod ne yazdırır?
+
+with open("test.txt", "w") as f:
+    f.write("Python")
+with open("test.txt", "a") as f:
+    f.write(" candır")
+with open("test.txt", "r") as f:
+    print(f.read())
+
+A) Python
+B) candır
+C) Python candır ✅
+D) Hata
+
+b"Merhaba" ifadesi hangi türdedir?
+A) str
+B) bytes ✅
+C) list
+D) dict
+
+"bin" dosyaları neden kullanılır?
+A) İnsanların kolayca okuması için
+B) Sayıları binary formatında saklamak için ✅
+C) Sadece Windows için
+D) Dosya boyutunu büyütmek için
+
+ord("A") çıktısı nedir?
+A) "A"
+B) 65 ✅
+C) 01000001
+D) b"A"
+
+Aşağıdakilerden hangisi .bin dosyalarını doğru tanımlar?
+A) Her zaman metin içerir
+B) İkili (binary) veri içerir ✅
+C) Resim dosyasıdır
+D) JSON dosyasıdır
+
+f.read(5) ne yapar?
+A) Tüm dosyayı okur
+B) İlk 5 karakteri okur ✅
+C) 5. satırı okur
+D) Son 5 karakteri okur
+
+Bir modelde 2 milyar parametre float16 (2 byte) olarak saklanıyorsa dosya boyutu yaklaşık kaç GB olur?
+A) 2 GB
+B) 4 GB ✅
+C) 8 GB
+D) 16 GB
+
+Dosyayı kapatmayı unutursak ne olabilir?
+A) Bellek sızıntısı olabilir ✅
+B) Dosya hızlanır
+C) Otomatik kapanır, sorun olmaz
+D) Dosya silinir
+
+encode("utf-8") ne yapar?
+A) String → bytes dönüştürür ✅
+B) Bytes → string dönüştürür
+C) Dosya uzantısını değiştirir
+D) Hata verir
+
+decode("utf-8") ne yapar?
+A) String → bytes dönüştürür
+B) Bytes → string dönüştürür ✅
+C) Sayıyı binary yapar
+D) Dosya açar

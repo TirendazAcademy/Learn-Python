@@ -1,0 +1,195 @@
+Kahoot Soruları (30 adet)
+📂 Temel Dosya Yazma
+
+    Python’da dosyaya yazmak için hangi metod kullanılır?
+    A) read()
+    B) write() ✅
+    C) append()
+    D) close()
+
+    "w" modunda açılan dosya için aşağıdakilerden hangisi doğrudur?
+    A) Dosya sadece okunur
+    B) Dosya varsa içeriği korunur
+    C) Dosya varsa içeriği silinir ✅
+    D) Dosya yoksa hata verir
+
+    "a" modunun özelliği nedir?
+    A) Dosya içeriğini siler
+    B) Dosya sonuna ekleme yapar ✅
+    C) Dosyayı sadece okur
+    D) Dosyayı siler
+
+    write() metodu hangi tür veri yazabilir?
+    A) Sadece int
+    B) Sadece float
+    C) Sadece string ✅
+    D) Her tür
+
+    f.write(str(123)) kodu ne yapar?
+    A) Hata verir
+    B) Dosyaya 123 yazdırır ✅
+    C) Dosyaya sayı nesnesi yazar
+    D) Dosyayı kapatır
+
+📂 writelines() ve Koleksiyonlar
+
+    writelines() parametre olarak ne alır?
+    A) int
+    B) string listesi ✅
+    C) sadece tuple
+    D) sadece dict
+
+    writelines() otomatik olarak satır sonu \n ekler mi?
+    A) Evet
+    B) Hayır ✅
+
+    Aşağıdakilerden hangisi writelines() ile geçerli değildir?
+    A) ["a\n", "b\n"]
+    B) ("a\n", "b\n")
+    C) {1, 2, 3} ✅
+    D) ["1\n", "2\n"]
+
+    Bir sözlüğü writelines() ile yazarsan ne olur?
+    A) Anahtarlar yazılır ✅
+    B) Değerler yazılır
+    C) Anahtar:değer yazılır
+    D) Hata verir
+
+    writelines(["Ali\n", "Ayşe\n"]) dosyaya ne yazar?
+    A) AliAyşe
+    B) Ali Ayşe
+    C) Ali ve Ayşe alt alta ✅
+    D) Hata verir
+
+📂 r+ Modu
+
+    "r+" modu hangi amaçla kullanılır?
+    A) Sadece okumak
+    B) Sadece yazmak
+    C) Hem okumak hem yazmak ✅
+    D) Dosyayı silmek
+
+    "r+" ile açılan dosya yoksa ne olur?
+    A) Yeni dosya oluşturur
+    B) Hata verir ✅
+    C) İçeriği sıfırlar
+    D) Sonuna ekler
+
+    "r+" ile yazmaya başlarsan ne olur?
+    A) İçeriği tamamen siler
+    B) Üzerine yazar ✅
+    C) Sonuna ekler
+    D) Hiçbir şey olmaz
+
+    Aşağıdaki modlardan hangisi dosyayı sıfırlamaz?
+    A) "w"
+    B) "w+"
+    C) "r+" ✅
+    D) "x"
+
+    f.seek(0); f.write("Yeni") "Merhaba" kelimesini nasıl değiştirir?
+    A) Merhaba
+    B) Yeniaba ✅
+    C) MerhabaYeni
+    D) Hata verir
+
+📂 seek() ve tell()
+
+    seek(0, 2) ne demektir?
+    A) Dosya başına git
+    B) Dosya sonuna git ✅
+    C) Ortaya git
+    D) Bulunduğun yerden ileri git
+
+    tell() metodu ne döner?
+    A) Dosya boyutu
+    B) İşaretçinin bulunduğu byte konumu ✅
+    C) Satır numarası
+    D) Dosya adını
+
+    seek(-3, 2) ne anlama gelir?
+    A) Başlangıçtan 3 byte ilerle
+    B) Sondan 3 byte geri git ✅
+    C) Ortadan 3 byte ileri git
+    D) Hata verir
+
+    seek(2, 1) hangi durumda hata verir?
+    A) Binary modda
+    B) Text modda ✅
+    C) Dosya boşsa
+    D) Dosya doluysa
+
+    Dosya "Hello" içeriyor. f.seek(0); f.read(2); print(f.tell()) çıktısı nedir?
+    A) 0
+    B) 1
+    C) 2 ✅
+    D) 5
+
+📂 w vs w+
+
+    "w" ile açılan dosyada okuma yapılabilir mi?
+    A) Evet
+    B) Hayır ✅
+
+    "w+" ile açılan dosya için hangisi doğrudur?
+    A) Sadece yazma yapılır
+    B) Okuma yapılmaz
+    C) Hem okuma hem yazma yapılır ✅
+    D) İçerik korunur
+
+    "w" ve "w+" açıldığında dosya varsa ne olur?
+    A) İçerik korunur
+    B) İçerik silinir ✅
+    C) Dosya sonuna eklenir
+    D) Hata verir
+
+    "w+" açıldığında dosya yoksa ne olur?
+    A) Hata verir
+    B) Yeni dosya oluşturur ✅
+    C) İçeriği sıfırlar
+    D) Hiçbir şey yapmaz
+
+    "w" ile "r+" arasındaki fark nedir?
+    A) "w" okuma yapar
+    B) "r+" içeriği siler
+    C) "w" içeriği siler, "r+" silmez ✅
+    D) Aynıdır
+
+📂 Hata Yönetimi
+
+    FileNotFoundError ne zaman oluşur?
+    A) Dosya bulunamazsa ✅
+    B) Disk dolarsa
+    C) Tür hatası olursa
+    D) Yazma izni yoksa
+
+    PermissionError ne zaman oluşur?
+    A) Dosya yoksa
+    B) Dosya yazmaya izin yoksa ✅
+    C) Disk doluysa
+    D) Encoding yanlışsa
+
+    try-except neden kullanılır?
+    A) Döngü kurmak için
+    B) Hata durumunda programın çökmesini engellemek için ✅
+    C) Dosyayı açmak için
+    D) Yorum satırı yazmak için
+
+    finally bloğunun özelliği nedir?
+    A) Hata olursa çalışır
+    B) Hata olmasa da her durumda çalışır ✅
+    C) Dosya açar
+    D) Hata mesajı yazdırır
+
+    Aşağıdaki kod ne yapar?
+
+try:
+    with open("deneme.txt", "w") as f:
+        f.write(123)
+except TypeError:
+    print("Hata: string gerekli")
+
+A) 123 yazdırır
+B) Hata verir
+C) Hata yakalanır, “Hata: string gerekli” yazılır ✅
+D) Dosya silinir

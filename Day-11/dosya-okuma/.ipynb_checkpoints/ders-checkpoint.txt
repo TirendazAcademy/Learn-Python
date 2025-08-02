@@ -1,0 +1,3 @@
+Python öğrenmek eğlenceli.
+Dosya işlemleri konusundayız.
+Bugün readlines() öğreniyoruz.
